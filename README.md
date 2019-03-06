@@ -6,3 +6,7 @@ CSE 311 Project 3.
 * Django
 
 ## Installation Guide
+
+## Resources
+Using this to start the project
+https://docs.djangoproject.com/en/2.1/intro/tutorial01/
