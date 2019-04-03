@@ -18,6 +18,6 @@ Including another URLconf
 """
 
 urlpatterns = [
-    path('game/', include('game.urls')),
+    path('', include('game.urls')),
     path('admin/', admin.site.urls),
 ]

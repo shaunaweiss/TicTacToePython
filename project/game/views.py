@@ -1,9 +1,13 @@
 from django.http import HttpResponse
-# import game
+from django.shortcuts import render
+from django.urls import reverse
+import game
+from game.forms import BoardForm
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the game index.")
+    board_form = BoardForm()
+    return render(request, 'game/index.html', {'board_form':board_form})
 
 # def get_board(request):
 #     board = game.
