@@ -21,7 +21,7 @@ class Space(models.Model):
     space_value = models.IntegerField(choices=VALUES, default=None)
     
     def _str_(self):
-        return ' '.join(self.board_space, self.spacee_value)
+        return self.board_space
 
 
 
