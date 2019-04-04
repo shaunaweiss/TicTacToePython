@@ -1,0 +1,20 @@
+<h1>{{ board.game_name }}</h1>
+{% if error_message %} <p><strong>{{ error_message }}</strong></p>{% endif %}
+{% comment %} <form action="{% url 'game:move' board.id %}" method="post"> {% endcomment %}
+{% csrf_token %}
+    {% for space in board.space_set.all %}
+        {% comment %} {% if space.space_value == 0 %} {% endcomment %}
+
+        <li>  Space Number: {{ space.id}} Space Value: {{space.space_value }} </li>
+
+        {% comment %} <input type="radio" name="space" id="space{{ forloop.counter }}" value="{{ space.id }}">
+        <label for="space{{ forloop.counter }}"> Space Number: {{ space.id}} Space Value: {{space.space_value }}</label><br> {% endcomment %}
+    {% endfor %}
+    {% comment %} <input type="text" name ="space" id="new_space" value="{{space.id}}">
+    <input type="submit" value="Move"> {% endcomment %}
+    {% comment %} <li><a href="{% url 'game:move' board.id %}">{{ board.game_name }}</a></li> {% endcomment %}
+{% comment %} </form> {% endcomment %}
+
+<form method="post">
+    {{ formset }}
+</form>
