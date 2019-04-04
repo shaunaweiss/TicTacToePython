@@ -4,70 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="{% static 'style/style.css' %}">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'style/style.css' %}">
 </head>
 <body>
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-6">
+        <div class="col-4">
             <div class="container" >
-                {% csrf_token %}
-                {% for square in board_form.square %}
-                    <div class='col-4 align-center'"><img id="square{{forloop.counter0}}"></div>
-                {% endfor %}
+                <form name="board-form" action="/" method="POST">
+                    <div class="row">
+                        {% csrf_token %}
+                        {% for square in board_form.square %}
+                            <div class='col-4'>
+                                {{square}}
+                                <img id="square{{forloop.counter0}}"></img>
 
-
-
-
-
-                <!--<div class="row justify-content-center">-->
-                    <!--<div class="col-4" style="padding-left:0;padding-right:0;">-->
-                        <!--<label>-->
-                          <!--<input type="radio" name="test" checked>-->
-                          <!--<img src="{% static 'img/o.png' %}"} style="height:100%;width:100%;">-->
-                        <!--</label>-->
-                    <!--</div>-->
-                    <!--<div class="col-4" style="padding-left:0;padding-right:0;">-->
-                        <!--<img src="{% static 'img/x.png' %}"} style="height:100%;width:100%;">-->
-                    <!--</div>-->
-                    <!--<div class="col-4" style="padding-left:0;padding-right:0;">-->
-                        <!--<img src="{% static 'img/o.png' %}"} style="height:100%;width:100%;">-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="row justify-content-center">-->
-                    <!--<div class="col-4" style="padding-left:0;padding-right:0;">-->
-                        <!--<img src="{% static 'img/x.png' %}"} style="height:100%;width:100%;">-->
-                    <!--</div>-->
-                    <!--<div class="col-4" style="padding-left:0;padding-right:0;">-->
-                        <!--<img src="{% static 'img/o.png' %}"} style="height:100%;width:100%;">-->
-                    <!--</div>-->
-                    <!--<div class="col-4" style="padding-left:0;padding-right:0;">-->
-                        <!--<img src="{% static 'img/x.png' %}"} style="height:100%;width:100%;">-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="row justify-content-center">-->
-                    <!--<div class="col-4" style="padding-left:0;padding-right:0;">-->
-                        <!--<img src="{% static 'img/o.png' %}"} style="height:100%;width:100%;">-->
-                    <!--</div>-->
-                    <!--<div class="col-4" style="padding-left:0;padding-right:0;">-->
-                        <!--<img src="{% static 'img/x.png' %}"} style="height:100%;width:100%;">-->
-                    <!--</div>-->
-                    <!--<div class="col-4" style="padding-left:0;padding-right:0;">-->
-                        <!--<img src="{% static 'img/o.png' %}"} style="height:100%;width:100%;">-->
-                    <!--</div>-->
-                <!--</div>-->
+                            </div>
+                        {% endfor %}
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 </div>
 
 
-
+<!--Matches the board state with the correct png files-->
 <script>
-    var arr = ['o', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'o'];
+    var arr = ['o', 'x', 'x', '-', 'o', 'x', 'o', 'x', 'o'];
     for(i=0; i<9; i++) {
         var square = "square" + i;
         var x_img = "{% static 'img/x.png' %}";
