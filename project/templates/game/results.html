@@ -1,9 +1,0 @@
-<h1>{{ board.game_name }}</h1>
-
-<ul>
-{% for space in board.space_set.all %}
-    <li>{{ space.id }} -- {{ space.space_value }}</li>
-{% endfor %}
-</ul>
-
-<a href="{% url 'game:detail' board.id %}">Move again?</a>

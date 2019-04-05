@@ -2,19 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e637d721-3040-4016-8b42-b5e7692c11ad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/TicTacToePython.iml" afterPath="$PROJECT_DIR$/.idea/TicTacToePython.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/project/game/forms.py" afterPath="$PROJECT_DIR$/project/game/forms.py" />
-      <change beforePath="$PROJECT_DIR$/project/game/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/project/game/migrations/0001_initial.py" />
-      <change beforePath="$PROJECT_DIR$/project/game/migrations/0002_auto_20190320_1912.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/project/game/controller.py" afterPath="$PROJECT_DIR$/project/game/controller.py" />
+      <change beforePath="$PROJECT_DIR$/project/game/management/commands/tests.py" afterPath="$PROJECT_DIR$/project/game/management/commands/tests.py" />
+      <change beforePath="$PROJECT_DIR$/project/game/management/commands/text_based.py" afterPath="$PROJECT_DIR$/project/game/management/commands/text_based.py" />
       <change beforePath="$PROJECT_DIR$/project/game/models.py" afterPath="$PROJECT_DIR$/project/game/models.py" />
-      <change beforePath="$PROJECT_DIR$/project/game/tests.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/game/urls.py" afterPath="$PROJECT_DIR$/project/game/urls.py" />
       <change beforePath="$PROJECT_DIR$/project/game/views.py" afterPath="$PROJECT_DIR$/project/game/views.py" />
-      <change beforePath="$PROJECT_DIR$/project/project/settings.py" afterPath="$PROJECT_DIR$/project/project/settings.py" />
-      <change beforePath="$PROJECT_DIR$/project/static/style/style.css" afterPath="$PROJECT_DIR$/project/static/style/style.css" />
-      <change beforePath="$PROJECT_DIR$/project/templates/game/detail.html" afterPath="$PROJECT_DIR$/project/templates/game/detail.html" />
+      <change beforePath="$PROJECT_DIR$/project/templates/game/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project/templates/game/results.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/videos/GUI_View_Demo.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/videos/Test_Demo.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/videos/Text_Based_View_Demo.mp4" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,72 +25,26 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/TicTacToePython$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1554426193580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project/game" />
+    <SUITE FILE_PATH="coverage/TicTacToePython$call.coverage" NAME="call Coverage Results" MODIFIED="1554493913914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/NSF Research" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="controller.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/project/game/controller.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="3" column="36" lean-forward="false" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/game/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+            <state relative-caret-position="775">
+              <caret line="37" column="42" lean-forward="false" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controller.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/game/controller.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project/game/management/commands/tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#65#0" expanded="true" />
-                <marker date="1554482379806" expanded="true" signature="179:1435" ph="..." />
-                <marker date="1554482379806" expanded="true" signature="1048:1435" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="text_based.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/game/management/commands/text_based.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/project/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/game/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="43" lean-forward="false" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-                <marker date="1554478812901" expanded="true" signature="185:229" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -105,23 +59,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/static/style/style.css">
+      <file leaf-file-name="text_based.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/game/management/commands/text_based.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="28" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="650">
+              <caret line="26" column="74" lean-forward="false" selection-start-line="26" selection-start-column="74" selection-end-line="26" selection-end-column="74" />
+              <folding>
+                <element signature="e#0#65#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/game/forms.py">
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/game/management/commands/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="800">
-              <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+            <state relative-caret-position="2175">
+              <caret line="87" column="47" lean-forward="false" selection-start-line="87" selection-start-column="47" selection-end-line="87" selection-end-column="47" />
               <folding>
-                <marker date="1554439646477" expanded="true" signature="951:952" ph="..." />
+                <element signature="e#0#65#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/game/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+              <folding>
+                <marker date="1554506362880" expanded="true" signature="158:202" ph="..." />
               </folding>
             </state>
           </provider>
@@ -170,15 +138,16 @@
         <option value="$PROJECT_DIR$/project/game/command.py" />
         <option value="$PROJECT_DIR$/project/game/text_based.py" />
         <option value="$PROJECT_DIR$/project/game/management/commands/my_command.py" />
-        <option value="$PROJECT_DIR$/project/game/management/commands/text_based.py" />
         <option value="$PROJECT_DIR$/project/static/style/style.css" />
         <option value="$PROJECT_DIR$/project/game/forms.py" />
         <option value="$PROJECT_DIR$/project/templates/game/detail.html" />
         <option value="$PROJECT_DIR$/project/game/tests.py" />
-        <option value="$PROJECT_DIR$/project/game/models.py" />
-        <option value="$PROJECT_DIR$/project/game/views.py" />
+        <option value="$USER_HOME$/Desktop/NSF Research/call.py" />
         <option value="$PROJECT_DIR$/project/game/controller.py" />
+        <option value="$PROJECT_DIR$/project/game/views.py" />
+        <option value="$PROJECT_DIR$/project/game/models.py" />
         <option value="$PROJECT_DIR$/project/game/management/commands/tests.py" />
+        <option value="$PROJECT_DIR$/project/game/management/commands/text_based.py" />
       </list>
     </option>
   </component>
@@ -210,7 +179,7 @@
     <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/NSF Research/call.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/project/game/models.py" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -227,7 +196,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.call">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -266,6 +235,29 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="call" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\luteh\Desktop\NSF Research\git\dark sky\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop/NSF Research" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TicTacToePython" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Desktop/NSF Research/call.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python.Unnamed" />
+      <item index="1" class="java.lang.String" itemvalue="Python.call" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -392,8 +384,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <marker date="1554478812901" expanded="true" signature="185:229" ph="..." />
+            <marker date="1554506362880" expanded="true" signature="158:202" ph="..." />
           </folding>
         </state>
       </provider>
@@ -518,13 +509,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project/game/input_script.py" />
-    <entry file="file://$USER_HOME$/Desktop/NSF Research/call.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-196">
-          <caret line="84" column="8" lean-forward="false" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/game/command.py" />
     <entry file="file://$PROJECT_DIR$/project/game/management/commands/my_command.py" />
     <entry file="file://$PROJECT_DIR$/project/game/text_based.py" />
@@ -544,13 +528,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/project/game/tests.py" />
     <entry file="file://$PROJECT_DIR$/project/game/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="800">
           <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
           <folding>
-            <marker date="1554439646477" expanded="true" signature="951:952" ph="..." />
+            <marker date="1554486986775" expanded="true" signature="951:952" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/NSF Research/call.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="268" column="62" lean-forward="false" selection-start-line="268" selection-start-column="62" selection-end-line="268" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -558,6 +551,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/game/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="37" column="42" lean-forward="false" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -570,58 +571,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/game/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/game/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="43" lean-forward="false" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <marker date="1554478812901" expanded="true" signature="185:229" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/game/management/commands/text_based.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/game/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/game/controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="650">
+          <caret line="26" column="74" lean-forward="false" selection-start-line="26" selection-start-column="74" selection-end-line="26" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project/game/management/commands/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        <state relative-caret-position="2175">
+          <caret line="87" column="47" lean-forward="false" selection-start-line="87" selection-start-column="47" selection-end-line="87" selection-end-column="47" />
           <folding>
             <element signature="e#0#65#0" expanded="true" />
-            <marker date="1554482379806" expanded="true" signature="179:1435" ph="..." />
-            <marker date="1554482379806" expanded="true" signature="1048:1435" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/game/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <folding>
+            <marker date="1554506362880" expanded="true" signature="158:202" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/game/controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="36" lean-forward="false" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>

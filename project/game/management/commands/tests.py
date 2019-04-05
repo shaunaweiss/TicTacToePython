@@ -85,7 +85,7 @@ class TestController(unittest.TestCase):
         self.assertEqual(determine_winner(board_state_2), 'o is the winner!')
         self.assertEqual(determine_winner(board_state_3), None)
 
-
+"""Allows the tests to be run from command line"""
 class Command(BaseCommand):
     def handle(self, *args, **options):
         suite = unittest.TestLoader().loadTestsFromTestCase(TestController)

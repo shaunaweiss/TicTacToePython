@@ -6,6 +6,7 @@ from game.controller import *
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpResponseRedirect
 
+"""Game view"""
 def index(request):
     board_id = None
     if request.session.get('board_id') == None:
@@ -17,6 +18,7 @@ def index(request):
     json_game = json.dumps(game)
     return render(request, 'game/detail.html', {'board_form': board_form, 'game': json_game})
 
+"""Method that communicates with the controller to update the view"""
 def move_redirect(request):
     if request.method == "POST":
         board_form = BoardForm(request.POST)
@@ -30,6 +32,7 @@ def move_redirect(request):
             board_form = BoardForm()
     return HttpResponseRedirect('/')
 
+"""Creates a game board"""
 def create_game_redirect(request):
     board_id = create_board_and_spaces()
     request.session['board_id'] = board_id

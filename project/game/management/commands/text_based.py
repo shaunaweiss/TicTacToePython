@@ -2,14 +2,14 @@ from django.core.management.base import BaseCommand, CommandError
 from game.models import *
 from game.controller import *
 
-
+"""Creates a graphical text view of the board"""
 def display_text_board(board_id):
     board_state = get_board_from_model(board_id)
     return ("\n" + "-------\n|" + board_state[0] + "|" + board_state[1] + "|" + board_state[2] + "|\n" +
             "-------\n|" + board_state[3] + "|" + board_state[4] + "|" + board_state[5] + "|\n" +
             "-------\n|" + board_state[6] + "|" + board_state[7] + "|" + board_state[8] + "|\n-------")
 
-
+"""Runs the game"""
 def run():
     board_id = create_board_and_spaces()
     game_running = True
@@ -24,7 +24,7 @@ def run():
         space_id = input()
         update_board(board_id, space_id, game_state['turn'])
 
-
+"""Allows input to be entered from the command line, necessary with Django"""
 class Command(BaseCommand):
     def handle(self, *args, **options):
         run()
