@@ -25,15 +25,7 @@ def detail(request, board_id):
     # board = get_object_or_404(Board, pk=board_id)
     # return render(request, 'game/detail.html', {'board': board})
 
-    formset = BoardFormSet(queryset=Space.objects.filter(board_space=board_id))
-    if request.method == 'POST':
-        formset = BoardFormSet(request.POST, request.FILES)
-        if formset.is_valid():
-            formset.save()
-            # do something.
-    else:
-        formset = BoardFormSet()
-
+    formset = BoardFormSet(queryset=Space.objects.filter(board_space_id=board_id))
     return render(request, 'game/detail.html', {'formset': formset})
 
     # BoardFormSet = modelformset_factory(Board, Space, fields=('id', 'board_space', 'space_value'))
