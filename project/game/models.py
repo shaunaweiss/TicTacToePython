@@ -1,12 +1,10 @@
 from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
-
+from datetime import datetime
 # Create your models here.
 
 class Board(models.Model):
     id = models.AutoField(primary_key=True)
-    pub_date = models.DateTimeField('date started')
-    game_name = models.CharField(max_length=200, default=None)
 
     def _str_(self):
         return self.game_name
@@ -14,11 +12,11 @@ class Board(models.Model):
 class Space(models.Model):
 
     VALUES = (
-        (0, 'X'), (1, 'O')
+        ('x', 'x'), ('o', 'o'), ('-', '-')
     )
-    id = models.PositiveIntegerField(primary_key=True, validators=[MinValueValidator(0), MaxValueValidator(8)])
+    space_id = models.PositiveIntegerField(validators=[MinValueValidator(0), MaxValueValidator(8)])
     board_space = models.ForeignKey(Board, on_delete=models.CASCADE)
-    space_value = models.IntegerField(choices=VALUES, default=None)
+    space_value = models.CharField(choices=VALUES, default='-', max_length=1)
     
     def _str_(self):
         return self.board_space

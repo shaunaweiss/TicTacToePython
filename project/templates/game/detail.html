@@ -1,20 +1,71 @@
-<h1>{{ board.game_name }}</h1>
-{% if error_message %} <p><strong>{{ error_message }}</strong></p>{% endif %}
-{% comment %} <form action="{% url 'game:move' board.id %}" method="post"> {% endcomment %}
-{% csrf_token %}
-    {% for space in board.space_set.all %}
-        {% comment %} {% if space.space_value == 0 %} {% endcomment %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
 
-        <li>  Space Number: {{ space.id}} Space Value: {{space.space_value }} </li>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'style/style.css' %}">
+    <script>
+        var result = {{game|safe}}.result;
+        if(result!=null) {
+            window.alert(result);
+            window.location.href="/create-game-redirect"
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <div class="container" >
+                <form name="board-form" action="/move-redirect" method="POST">
+                    <div class="row">
+                        {% csrf_token %}
+                        {% for square in board_form.square %}
+                            <div class='col-4'>
+                                {{square}}
+                                <img id="square{{forloop.counter0}}"></img>
 
-        {% comment %} <input type="radio" name="space" id="space{{ forloop.counter }}" value="{{ space.id }}">
-        <label for="space{{ forloop.counter }}"> Space Number: {{ space.id}} Space Value: {{space.space_value }}</label><br> {% endcomment %}
-    {% endfor %}
-    {% comment %} <input type="text" name ="space" id="new_space" value="{{space.id}}">
-    <input type="submit" value="Move"> {% endcomment %}
-    {% comment %} <li><a href="{% url 'game:move' board.id %}">{{ board.game_name }}</a></li> {% endcomment %}
-{% comment %} </form> {% endcomment %}
+                            </div>
+                        {% endfor %}
+                        {{ board_form.turn }}
+                        {{ board_form.board }}
 
-<form method="post">
-    {{ formset }}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<form action="create-game-redirect">
+    <input type ="submit" value="Start New Game">
 </form>
+<!--Matches the board state with the correct png files-->
+<script>
+    var arr = {{game|safe}}.board_state;
+    for(i=0; i<9; i++) {
+        var square = "square" + i;
+        var x_img = "{% static 'img/x.png' %}";
+        var o_img = "{% static 'img/o.png' %}";
+        var neither_img = "{% static 'img/neither.png' %}";
+        if(arr[i]=='x') {
+            document.getElementById(square).src = x_img;
+        }
+        else if(arr[i]=='o') {
+            document.getElementById(square).src = o_img;
+        }
+        else {
+            document.getElementById(square).src = neither_img;
+        }
+    }
+    document.getElementById("id_turn").value = {{game|safe}}.turn;
+    document.getElementById("id_board").value = {{game|safe}}.board_id;
+
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

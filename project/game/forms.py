@@ -29,6 +29,9 @@ BoardFormSet = modelformset_factory(Space, fields=('id', 'board_space', 'space_v
 
 
 
-# class BoardForm(forms.Form):
-#     square = forms.ChoiceField(choices=(('0', '0'), ('1', '1'), ('2', '2'),
-#     ('3', '3'), ('4', '4'), ('5', '5'),('6', '6'), ('7', '7'), ('8', '8')))
+class BoardForm(forms.Form):
+    square = forms.ChoiceField(choices=(('0', 0), ('1', 1), ('2', 2),
+    ('3', 3), ('4', 4), ('5', 5),('6', 6), ('7', 7), ('8', 8)),
+    widget = forms.RadioSelect(attrs={'onchange': 'this.form.submit();'}))
+    turn = forms.CharField()
+    board = forms.IntegerField()
