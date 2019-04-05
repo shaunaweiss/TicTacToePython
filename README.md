@@ -1,12 +1,12 @@
 # Tic Tac Toe 
 CSE 311 Project 3. 
 
-##Portions of Project
-*Controller Logic: project/game/controller.py
-*GUI View: project/game/views.py
-*Text View: project/game/management/commands/text_based.py
-*Unit Tests: project/game/management/commands/tests.py
-*Videos of all: videos/
+## Portions of Project
+* Controller Logic: project/game/controller.py
+* GUI View: project/game/views.py
+* Text View: project/game/management/commands/text_based.py
+* Unit Tests: project/game/management/commands/tests.py
+* Videos of all: videos/
 
 ## Languages and Frameworks
 * Python
